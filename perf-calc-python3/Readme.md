@@ -12,4 +12,4 @@ e.g.:
 `perf script > perf_memory.log`
 
 # run it:
-`cat perf_memory.log | python3 perf-calc-python3.py`
+`cat perf_memory.log | python3 /usr/bin/perf-calc-python3.py`
