@@ -3,10 +3,10 @@ This script parses the chronological perf script output. It tracks the shifting 
 e.g.:
 
 # Option A: Launch a specific application and record it
-`sudo perf record -e syscalls:sys_enter_mmap,syscalls:sys_enter_brk -- my_application`
+`perf record -e syscalls:sys_enter_mmap,syscalls:sys_enter_brk -- my_application`
 
 # Option B: Attach to an already running process by PID
-`sudo perf record -e syscalls:sys_enter_mmap,syscalls:sys_enter_brk -p <PID> -- sleep 10`
+`perf record -e syscalls:sys_enter_mmap,syscalls:sys_enter_brk -p <PID> -- sleep 10`
 
 # Generate input for perf-calc-python3
 `perf script > perf_memory.log`
